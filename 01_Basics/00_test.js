@@ -1,5 +1,3 @@
-console.log(undefined == 0);
-console.log(undefined > 0);
-console.log(undefined < 0);
-console.log(undefined <= 0);
-console.log(undefined >= 0);
+const str = 'Hello, world!. its a beautiful world!';
+
+console.log(str.replace('world', 'JavaScript')); // "Hello, JavaScript!"
