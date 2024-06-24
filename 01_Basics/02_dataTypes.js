@@ -3,20 +3,23 @@
 "use strict"; // treat all JS code as newer version
 
 // alert( 3 + 3) // we are using nodejs, not browser
+// browser e ekta pop up show korbe. nodejs e nai. 
 
-console.log(3 
+console.log(3
     +
-     3) // code readability should be high
+    3) // code readability should be high
 
 console.log("Abu Bakkar Siddique")
 
 
 let name = "Abu Bakkar Siddique"
-let age = 18
+let age = 25
 let isLoggedIn = false
 let state;
 
-// number => 2 to power 53
+
+// data types:
+// number => Range: 2 to power 53
 // bigint
 // string => ""
 // boolean => true/false
@@ -39,6 +42,7 @@ console.log(typeof null); // object
 
 //Output:
 // $ node 01_Basics/02_dataTypes.js
+
 // 6
 // Abu Bakkar Siddique
 // string
