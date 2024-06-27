@@ -1,7 +1,9 @@
 // singleton
 // Object.create
 
-// Important: take a symbol and create a object with that symbol as a key. then try to access the value of that key.
+// Important Question: take a symbol and create a object with that symbol as a key. 
+//then try to access the value of that key.
+
 
 // objects literal: key-value pairs separated by commas and enclosed in curly braces {} 
 
@@ -43,6 +45,8 @@ user.greeting = function () {
 }
 console.log(user.greeting); // undefined
 console.log(user.greeting());  // Hello World
+
+
 
 
 user.greeting2 = function () {

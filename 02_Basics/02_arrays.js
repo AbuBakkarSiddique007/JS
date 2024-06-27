@@ -28,14 +28,15 @@ console.log(real_another_array); // output: [ 1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5 ]
 
 // Array.isArray, Array.from, Array.of methods in javascript:
 // Array.isArray: it will check if the given object is an array or not.
-// Array.from: it will create an array from the given object.
+// Array.from: it will create an array from array-like or iterable object.
 // Array.of: it will create an array from the given arguments.
 
 
 console.log(Array.isArray([1, 2, 3])) // true
 console.log(Array.isArray("AbuBakkarSiddique")) // false
 console.log(Array.from("AbuBakkarSiddique")) // output: [ 'A', 'b', 'u', 'B', 'a', 'k', 'k', 'a', 'r', 'S', 'i', 'd', 'd', 'i', 'q', 'u', 'e' ]
-console.log(Array.from({ name: "AbuBakkarSiddique" })) // interesting output: []
+
+onsole.log(Array.from({ name: "AbuBakkarSiddique" })) // interesting output: []
 
 let score1 = 100
 let score2 = 200

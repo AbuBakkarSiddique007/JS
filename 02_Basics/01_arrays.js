@@ -1,4 +1,4 @@
-// array ::
+// array :
 
 
 //Declaration of array:
