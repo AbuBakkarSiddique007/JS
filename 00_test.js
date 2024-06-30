@@ -1,11 +1,4 @@
-let mySymbol = Symbol("its riki")
-
-let theObject = {
-    name: "abu",
-    
-    "full Name": "Abu Bakkar Siddique",
-    age: 25,
-    [mySymbol]: "its abu"
+if (2 == [2]) {
+    console.log("hello, world!");
 }
-
-console.log(theObject["full Name"]);
+console.log("lorem");
