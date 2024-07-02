@@ -47,3 +47,20 @@ myCoding.forEach((item) => {
 
     console.log(item.languageName);
 })
+
+
+//Important:
+const coding1 = ["js", "ruby", "java", "python", "cpp"]
+
+
+let theCode = coding1.forEach((item) => {
+    // console.log(item)
+    return item
+})
+console.log(theCode);
+//output:
+// undefined because forEach method does not return any meaningful value.
+
+
+//Consider using methods like map, filter, or reduce,
+//which are designed to return a value based on the elements of an array.
