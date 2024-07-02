@@ -39,15 +39,21 @@ const array1 = ["js", "py", "cpp", "rb"]
 
 for (const arr in array1) {
     // console.log(arr);
+    console.log(array1[arr]);
 }
 
-//output:
-// here its gives just the index num
+//output1:
+// here its gives just the arrays key.
 // 0
 // 1
 // 2
 // 3
 
+//output2:
+// js
+// py
+// cpp
+// rb
 
 //In maps:
 const map = new Map()
@@ -57,8 +63,9 @@ map.set('Fr', "France")
 map.set('BD', "Bangladesh")
 
 for (const keys in map) {
-    console.log(keys);
+    // console.log(keys);
 }
 
 // output:
 // Did not get any output.
+//Because its not iterate-able.
