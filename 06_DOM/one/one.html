@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM: Document Object Model</title>
+</head>
+
+<body>
+    <div class="bg-black">
+        <h1 class="heading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptas at error corrupti nisi suscipit.
+            Aspernatur deserunt expedita possimus ab corporis cumque voluptatum. Totam exercitationem adipisci dolorem
+            nesciunt. Consequatur, reprehenderit?
+        </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, necessitatibus!</p>
+    </div>
+</body>
+
+</html>
+
+
+         #####DOM Architecture above this code::####### 
+         -----------------------------------------------
+         -----------------------------------------------
+                +------------------+
+                |    DOM Window    |
+                +------------------+
+                        |
+                        | Provides
+                        v
+                +------------------------------+
+                |        DOM Document           |
+                |   (Represents <html> tag)    |
+                +------------------------------+
+                      /                      \
+                     /                        \
+                    v                          v
+                +----------------+    +----------------+
+                |   DOM Head     |    |    DOM Body     |
+                | (Represents    |    | (Represents     |
+                |  <head> tag)   |    |   <body> tag)   |
+                +----------------+    +----------------+
+                |                                   |
+                |                                   |
+                v                                   v
+                +------------------+          +------------------+
+                | DOM Meta         |          | DOM Div          |
+                | (Represents      |          | (Represents      |
+                |  <meta> tag)     |          |   <div> tag)     |
+                +------------------+          +------------------+
+                | charset: UTF-8   |          | class: "bg-black"|
+                +------------------+          +------------------+
+                |                                    |
+                v                                    v
+                +------------------+          +------------------+
+                | DOM Title        |          | DOM H1           |
+                | (Represents      |          | (Represents      |
+                |  <title> tag)    |          |   <h1> tag)      |
+                +------------------+          +------------------+
+                | Text: DOM:       |          | Text: Lorem ipsum|
+                +------------------+          +------------------+
+                |                                   |
+                v                                   v
+                +------------------+          +------------------+
+                |                  |          | DOM Paragraph    |
+                |                  |          | (Represents      |
+                |                  |          |   <p> tag)       |
+                |                  |          +------------------+
+                |                  |          | Text: Lorem ipsu |
+                |                  |          +------------------+
+                +------------------+
+
+
