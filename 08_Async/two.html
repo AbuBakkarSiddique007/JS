@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeFunction</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Hello World! Abu Bakkar Siddique</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+
+    <script>
+
+        // const sayDate = function () {
+        //     console.log("hello world", Date.now());
+        // }
+
+        // let clear = document.querySelector("#start").addEventListener("click", function () {
+        //     setInterval(sayDate, 1000);
+        // })
+
+
+
+        // // const setIntervalId = setInterval(sayDate, 1000, "hello")
+
+        // document.querySelector("#stop").addEventListener("click", function () {
+        //     clearInterval(clear)
+        // })
+
+
+
+        // setInterval(sayDate, 1000, "hello")
+
+
+        // clearInterval(setIntervalId)
+
+
+        let clear = setInterval(() => {
+            console.log("its riki from bahaddarhat");
+        }, 1000);
+
+        document.querySelector("#start").addEventListener("click", function () {
+            clear()
+        })
+
+        document.querySelector("#stop").addEventListener("click", function () {
+            clearInterval(clear)
+        })
+
+        // clearInterval(clear)
+
+
+
+    </script>
+</body>
+
+</html>

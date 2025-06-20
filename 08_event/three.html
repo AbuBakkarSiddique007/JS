@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <H1>Hello World!</H1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        //start and stop button:
+
+        let handler = function () {
+            console.log("RiKi Ahmed");
+        }
+
+        let intervalId
+
+        let clear = document.querySelector('#start').addEventListener('click', function () {
+            if (!intervalId) {
+                intervalId = setInterval(handler, 1000)
+                console.log("start");
+            }
+
+        })
+
+        document.querySelector('#stop').addEventListener('click', function () {
+            if (intervalId) {
+                clearInterval(intervalId)
+                intervalId = null
+                console.log("stop");
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

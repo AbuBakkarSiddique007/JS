@@ -1,0 +1,36 @@
+<!-- Topics:
+     setTimeout
+     setInterval
+     clearTimeout -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeFunction</title>
+</head>
+
+<body>
+    <h1>Hello World! Abu Bakkar Siddique</h1>
+    <button id="stop">
+        Stop
+    </button>
+
+    <script>
+
+        const changeText = (function () {
+            let changeName = document.querySelector("h1").innerText = "its riki"
+        })
+
+        let changeMe = setTimeout(changeText, 2000)
+
+        document.querySelector("#stop").addEventListener("click", function () {
+            clearTimeout(changeMe)
+            console.log("stop");
+        })
+    </script>
+</body>
+
+</html>

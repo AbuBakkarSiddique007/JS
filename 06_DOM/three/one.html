@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Remove Element in DOM</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+
+    </ul>
+
+    <script>
+        function addLanguage(langName) {
+            let newLanguage = document.createElement("li")
+
+            newLanguage.innerHTML = `${langName}`
+            document.querySelector(".language").appendChild(newLanguage)
+        }
+        addLanguage("Python")
+        addLanguage("C")
+        addLanguage("C++")
+
+        //AnotherWay:(Recommended)
+        //Optimize way:
+
+        function AnotherWay(languageName) {
+            let LNG = document.createElement("li")
+
+            LNG.appendChild(document.createTextNode(languageName))
+
+            document.querySelector(".language").appendChild(LNG)
+        }
+        AnotherWay("Java")
+
+        //Edit:
+        //innerHTML
+        let secondLang = document.querySelector("li:nth-child(2)")
+        // console.log(secondLang);
+        secondLang.innerHTML = "Mojo"
+
+
+        //Another way for edit:(RC)
+        //replaceWith()
+        const newLang = document.createElement("li")
+        newLang.textContent = "Ruby"
+        secondLang.replaceWith(newLang)
+
+        //Another way for edit: 
+        //change also outerHTML
+
+        const firstLang = document.querySelector("li:first-child")
+        // console.log(firstLang);
+        firstLang.outerHTML = "<li> Go Lang </li>"
+
+        //Remove :
+        const lastLang = document.querySelector("li:last-child")
+        // console.log(lastLang);
+        lastLang.remove()
+
+    </script>
+</body>
+
+</html>

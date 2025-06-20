@@ -79,7 +79,7 @@ map1.set('v3', 'value3')
 
 // console.log(map1);
 
-// using for of for iterating the map:
+// using "for of" for iterating the map:
 
 for (const theMap of map1) {
     // console.log(theMap);

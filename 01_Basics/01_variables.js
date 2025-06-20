@@ -58,4 +58,3 @@ console.table([accountId, accountEmail, accountPassword, accountCity, accountSta
 // │ 3       │ 'Noakhali'       │
 // │ 4       │ undefined        │
 // └─────────┴──────────────────┘
-

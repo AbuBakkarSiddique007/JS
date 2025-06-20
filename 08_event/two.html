@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and clearTimeout</title>
+</head>
+
+<body>
+    <h1>Abu Bakkar Siddique</h1>
+    <button id="stop">Stop</button>
+
+
+
+    <script>
+        //setTimeout and clearTimeout::
+
+
+        //setTimeout: ekta specific time er por output dibe.
+
+        // setTimeout(function () {
+        //     console.log("Hello World");
+        // }, 2000)
+
+        // document.querySelector('h1').innerText = "Its Riki"
+
+        //01.
+        // setTimeout(function () {
+        //     document.querySelector('h1').innerText = "Its Riki"
+        // }, 2000)
+
+
+        //or
+        let changeText = function () {
+            document.querySelector('h1').innerText = "Its Riki"
+        }
+
+
+        //clearTimeout: change ta jodi clear korte chaile change howar agea.
+        let clearChange = setTimeout(changeText, 2000)
+
+        document.querySelector('#stop').addEventListener('click', function () {
+            clearTimeout(clearChange)
+            console.log('stopppppped');
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>
